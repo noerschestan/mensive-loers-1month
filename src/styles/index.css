@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom */
+:root{
+  --bg-gradient: linear-gradient(180deg,#7B0828 0%, #C43B57 50%, #FF6B9A 100%);
+}
+
+body{
+  @apply bg-[var(--bg-gradient)] text-white antialiased;
+  font-family: Inter, sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+
+/* small glass card */
+.glass {
+  background: rgba(255,255,255,0.06);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255,255,255,0.06);
+}
+.polaroid {
+  background: white;
+  color: #111827;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+}
+.heart-trail {
+  pointer-events: none;
+  position: fixed;
+  z-index: 60;
+}
